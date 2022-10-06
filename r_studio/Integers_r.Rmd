@@ -1,0 +1,39 @@
+---
+title: "Print Integers"
+output: html_document
+date: "2022-10-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Print integers without a loop
+
+```{r}
+print(1:10)
+```
+
+```{r}
+cat(1:10)
+```
+
+### Printing Integers with a loop
+
+* Using a for loop
+
+```{r}
+for (x in c(1:10)) {
+  cat(x , "")
+}
+```
+
+* Using a While Loop
+
+```{r}
+i=0
+while ( i < 10) {
+  i = i +1
+  print(i)
+}
+```
